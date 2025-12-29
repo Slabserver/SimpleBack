@@ -1,0 +1,23 @@
+name: SimpleBack
+main: org.slabserver.plugin.simpleback.SimpleBack
+version: 0.0.1-SNAPSHOT
+api-version: 1.15
+commands:
+  back:
+    description: Sends the player back to their last location
+    usage: /back
+    permission: simpleback.back
+    permission-message: You don't have permission simpleback.back
+  forward:
+    description: Sends the player forward to their last location before running /back
+    usage: /forward
+    permission: simpleback.forward
+    permission-message: You don't have permission simpleback.forward
+
+permissions:
+  simpleback.back:
+    description: Allows you to run /back.
+    default: true
+  simpleback.forward:
+    description: Allows you to run /forward.
+    default: true
